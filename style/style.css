@@ -35,28 +35,20 @@ body {
 
 .wrapper {
     width: 900px;
-    margin: 0 auto;
-    display: block;
+    margin: auto;
+    font-size: 0;
+}
+
+.card:nth-child(even) {
+    margin-left: 60px;
 }
 
 
 .card {
-    display: block;
+    display: inline-block;
     width: 420px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    float: left;
     margin-bottom: 130px;
-
-}
-
-.card:nth-child(even) {
-    float: right;
-}
-
-.card img {
-    margin-bottom: 30px;
+    font-size: 16px;
 }
 
 .upper {
