@@ -11,7 +11,7 @@
     width: 1110px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 35px;
+    padding-top: 35px;
     text-transform: uppercase;
     font-weight: bold;
     vertical-align: middle;
@@ -78,58 +78,71 @@ h2::after {
 }
 
 .conteiner {
-    width: 1110px;
+    width: 1140px;
     margin: auto;
     height: auto;
     overflow: hidden;
+    background: #fff;
 }
 
 .product {
     width: 255px;
+    height: 322px;
     float: left;
-    margin-bottom: 23px;
+    margin: 0 15px;
+    background: #fff;
     cursor: pointer;
     box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
 }
 
-.product:not(:first-child):not(:nth-child(5)) {
-    margin-left: 28px;
+.conteiner .product:nth-child(-n+4) {
+    margin-bottom: 25px;
+}
+
+.product-img-wrp {
+    overflow: hidden;
+    height: 283px;
+    line-height: 283px;
+    text-align: center;
+}
+
+.cart-img-wrp {
+    overflow: hidden;
+    height: 283px;
+    line-height: 283px;
+    text-align: center;
+}
+
+.cart-img {
+    vertical-align: middle;
+    max-width: 100%;
 }
 
 .under_image {
-    width: 255px;
-    height: 0;
-    margin: 0;
+    height: calc(322px - 283px);
+    line-height: calc(322px - 283px);
+    background: #323232;
+    overflow: hidden;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    transition-duration: 0.3s;
 }
 
 .name {
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    float: left;
-    background-color: #323232;
-    margin: 0;
-    font-size: 18px;
     padding-left: 14px;
 }
 
 .cost {
-    width: 55px;
-    height: 40px;
-    line-height: 40px;
     float: right;
-    background-color: #8c8c8c;
-    font-size: 18px;
-    text-align: center;
+    background: #8c8c8c;
+    padding: 0 12px;
+    transition-duration: 0.3s;
 }
 
-.product div {
-    color: #fff;
-}
 
-.product:hover .name {
+.product:hover .under_image {
     background-color: #1abc9c;
 }
 
@@ -137,17 +150,12 @@ h2::after {
     background-color: #7fd9c7;
 }
 
-
-
 .card {
     width: 350px;
+    margin: 0 15px;
     float: left;
-    font-family: Myriad Pro;
+    font-family: "Myriad Pro";
     color: #555252;
-}
-
-.card:not(:first-child) {
-    margin-left: 30px;
 }
 
 h3::after {
@@ -173,12 +181,10 @@ h3::after {
     margin-bottom: 80px;
     background: transparent;
     border-width: 1px;
-    padding: 0;
-    width: 160px;
-    height: 50px;
+    padding: 1rem 2rem;
     border-radius: 5%;
     font-size: 16px;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     background-color: #1abc9c;
     line-height: 1.2;
     color: #fff;
