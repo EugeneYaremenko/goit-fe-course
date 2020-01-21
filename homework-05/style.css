@@ -17,6 +17,11 @@ img {
     clear: both;
 }
 
+nav {
+    width: 1140px;
+    height: 90px;
+}
+
 .header {
     width: 1140px;
     height: 90px;
@@ -89,7 +94,7 @@ a:hover {
     top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 54px;
+    font-size: 60px;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
@@ -116,14 +121,54 @@ a:hover {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0.651;
     z-index: 3;
+    border: none;
+    outline: none;
+}
+
+.slider_next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.slider_prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider_next::before,
+.slider_prev::before {
+    content: "";
+    --s: 28px;
+    --bd: 4px solid #fff;
+    width: var(--s);
+    height: var(--s);
+    border-left: var(--bd);
+    border-top: var(--bd);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.slider_next::before {
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.slider_prev::before {
+    left: 55%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .slider_control {
-    position: absolute;
     display: inline-block;
-    background-color: rgb(78, 198, 171);
-    opacity: 0.651;
+    background-color: #1abc9c;
     width: 104px;
     height: 104px;
     z-index: 2;
@@ -132,29 +177,16 @@ a:hover {
     transform: translateY(-50%);
 }
 
-.slider_control:hover {
-    background-color: rgb(26, 188, 156);
-}
-
-.slider_prev {
-    left: 0;
-    background-image: url("./img/prev_arrow.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-
-.slider_next {
-    right: 0;
-    background-image: url("./img/next_arrow.png");
-    background-repeat: no-repeat;
-    background-position: center;
+.slider_prev:hover,
+.slider_next:hover {
+    background-color: #4ec6ab;
+    opacity: 1;
     cursor: pointer;
 }
 
 h2 {
     text-align: center;
-    font-size: 48px;
+    font-size: 60px;
     color: #555252;
     text-transform: uppercase;
     padding-top: 105px;
@@ -239,10 +271,10 @@ h2::after {
     width: 255px;
     height: 283px;
     border: 10px solid #fff;
-    background-color: #323232;
+    background-color: rgba(50, 50, 50, 0.5);
     font-family: "Myriad Pro";
     text-transform: uppercase;
-    opacity: 0;
+    z-index: -5;
 }
 
 .icons {
@@ -252,16 +284,12 @@ h2::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
 }
 
 .product_item:hover .wrapper_icon {
-opacity: 0.5;
-}
+    z-index: 5;
 
-.product_item:hover .icons {
-    opacity: 1;
-    }
+}
 
 .icon_item {
     position: relative;
@@ -271,7 +299,6 @@ opacity: 0.5;
     float: left;
     list-style: none;
     border: 1px solid #fff;
-
 }
 
 .icons li:nth-child(2) {
@@ -287,9 +314,8 @@ opacity: 0.5;
     top: 55%;
     width: 170px;
     height: 50px;
-    float: left;
     list-style: none;
-    border: 1px solid #fff; 
+    border: 1px solid #fff;
 }
 
 .icon_item img {
@@ -297,18 +323,13 @@ opacity: 0.5;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.icon_item_add img {
-    position: absolute;
-
+    z-index: 5;
 }
 
 .icon_item_add a {
     position: absolute;
-    top: -117px;
+    top: -116px;
     right: 15px;
-    z-index: 5;
     color: #fff;
     font-family: "Myriad Pro";
 }
@@ -318,7 +339,11 @@ opacity: 0.5;
 }
 
 .icon_item_add:hover {
-    background-color: #1abc9c;
+    background-color: #323232;
+}
+
+.icons:hover li:nth-child(4) {
+    background-color: #323232;
 }
 
 .product_item:hover .under_image {
