@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    max-width: 1200px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu {
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+.menu_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_item a {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(149, 225, 211);
+
+}
+
+.menu_item a:hover {
+    color: rgb(243, 129, 129);
+}
+
+.menu_item a::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(243, 129, 129);
+    opacity: 0;
+}
+
+.menu_item:hover a::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(243, 129, 129);
+    opacity: 1;
+}
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+h2::before {
+    display: block;
+    content: "We work with";
+    margin: 20px auto;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+    text-transform: none;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: auto;
+    margin: 40px auto;
+    background-color: rgb(243, 129, 129);
+}
+
+h3 {
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+h3::before {
+    display: block;
+    content: "Who we are";
+    margin: 20px auto;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+    text-transform: none;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: auto;
+    margin: 40px auto;
+    background-color: rgb(243, 129, 129);
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service_item {
+    display: flex;
+    width: 400px;
+    padding: 15px;
+    margin-bottom: 30px;
+
+}
+
+.service_image {
+    width: 80px;
+}
+
+.service_image img {
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+    margin: 0;
+    border: 0;
+}
+
+.service_info {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+
+.service_info a:hover {
+    color: rgb(243, 129, 129);
+}
+
+.service_name {
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-family: "Montserrat";
+    line-height: 1.2;
+    text-align: left;
+}
+
+.describe {
+    padding-top: 15px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: left;
+}
+
+.center {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 150px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.team_cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.text {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 85px;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-style: italic;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+
+.team_card_hover {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(rgba(238, 138, 138, 0.7), rgba(241, 216, 135, 0.7));
+    opacity: 0;
+}
+
+.contact_icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: 55px;
+    opacity: 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin: 1px;
+    background-color: rgb(252, 227, 138);
+}
+
+.icon img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon:hover {
+    background-color: rgb(149, 225, 211);
+    cursor: pointer;
+}
+
+.team_card_hover:hover {
+    opacity: 1;
+    transform: translate(-200px, -10px);
+    transition-duration: 1s;
+    z-index: 2;
+}
+
+.team_card_hover:hover .contact_icons {
+    opacity: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 60px;
+    max-width: 1200px;
+    padding: 25px 0;
+    border-top: 1px solid rgb(229, 229, 229);
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.contact {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.contact a {
+    color: rgb(153, 225, 213);
+}
+
+.contact a:hover {
+    color: rgb(243, 129, 129);
+}
+
+.mail {
+    width: 380;
+    height: 40px;
+    border: 1px solid rgb(229, 229, 229);
+    display: flex;
+    align-content: center;
+}
+
+.mail button {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    background: transparent;
+    background-color: rgb(149, 225, 211);
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    border-width: 1px solid;
+    border-color: rgb(149, 225, 211);
+    border-style: solid;
+}
+
+.mail button:hover {
+    background-color: rgb(243, 129, 129);
+    border-color: rgb(243, 129, 129);
+}
