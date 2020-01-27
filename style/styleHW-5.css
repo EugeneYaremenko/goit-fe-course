@@ -43,8 +43,12 @@ img {
 }
 
 .menu_item {
-    margin: 0 1rem;
+    margin-right: 35px;
     font-size: 14px;
+}
+
+.menu_item:last-child {
+    margin-right: 0px;
 }
 
 a {
@@ -216,10 +220,14 @@ h2::after {
     width: 255px;
     height: 322px;
     float: left;
-    margin: 0 15px;
+    margin-right: 30px;
     background: #fff;
     cursor: pointer;
     box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
+}
+
+.product_item:last-child {
+    margin-right: 0px;
 }
 
 .product-img-wrp {
@@ -354,11 +362,8 @@ h2::after {
 }
 
 .wrapper_footer {
-    position: relative;
     width: 100%;
-    margin: 0 auto;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    min-height: 70px;
     background-color: #323232;
 }
 
@@ -367,15 +372,14 @@ h2::after {
 }
 
 .contacts {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
     font-size: 16px;
     font-family: "Myriad Pro";
+    color: #fff
 }
 
-.color_text {
+.contacts a:hover {
     color: #1abc9c
 }
