@@ -11,43 +11,38 @@
 </head>
 
 <body>
-    <header>
-        <div class="wrapper_header clearfix">
-
-            <div class="logo"><a href="#"><img src="../homework-04/img/LOGO.jpg" alt="Mart_logo"></a></div>
-            <nav>
-                <ul class="menu">
-                    <li class="menu_item"><a href="#">Home</a></li>
-                    <li class="menu_item"><a href="#">About us</a></li>
-                    <li class="menu_item"><a href="#">Page</a></li>
-                    <li class="menu_item"><a href="#">Shop</a></li>
-                    <li class="menu_item"><a href="#">Blog</a></li>
-                    <li class="menu_item"><a href="#">Contact us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <article>
-        <div class="wrapper">
+    <div class="wrapper">
+        <header class="header clearfix">
+                <div class="logo"><a href="#"><img src="../homework-05/img/mart.png" alt="Mart_logo"></a></div>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu_item"><a href="#">Home</a></li>
+                        <li class="menu_item"><a href="#">About us</a></li>
+                        <li class="menu_item"><a href="#">Page</a></li>
+                        <li class="menu_item"><a href="#">Shop</a></li>
+                        <li class="menu_item"><a href="#">Blog</a></li>
+                        <li class="menu_item"><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+        </header>
+    </div>
+    
+        <article>
             <div class="slider">
                 <div class="slider_item">
-                    <img src="./img/slide_1.jpg" alt="Happy girls">
-                    <span class="slider_title">Affordable paris tours</span>
-                    <span class="slider_text">City tours / Tour tickets / Tour guides</span>
+                    <div class="slider_title">Affordable paris tours</div>
+                    <div class="slider_text">City tours / Tour tickets / Tour guides</div>
+                </div>
+                <div class="wrapper slider_button">
+                    <button class="slider_control slider_prev"></button>
+                    <button class="slider_control slider_next"></button>
                 </div>
             </div>
+        </article>
 
-            <div class="slider_button">
-                <button class="slider_control slider_prev"></button>
-                <button class="slider_control slider_next"></button>
-            </div>
-        </div>
-    </article>
-
-    <article>
         <div class="wrapper">
+        <article>
             <h2>New collection</h2>
-
             <ul class="products clearfix">
 
                 <li class="product_item">
@@ -68,15 +63,14 @@
                         </div>
                     </div>
                     <div class="under_image clearfix">
-                        <span class="name">
+                        <div class="name">
                             Blue tshirt
-                        </span>
-                        <span class="cost">
+                        </div>
+                        <div class="cost">
                             $26
-                        </span>
+                        </div>
 
                     </div>
-
                 </li>
 
                 <li class="product_item">
@@ -97,12 +91,12 @@
                         </div>
                     </div>
                     <div class="under_image clearfix">
-                        <span class="name">
+                        <div class="name">
                             Woman shirt
-                        </span>
-                        <span class="cost">
+                        </div>
+                        <div class="cost">
                             $31
-                        </span>
+                        </div>
                     </div>
                 </li>
 
@@ -124,12 +118,12 @@
                         </div>
                     </div>
                     <div class="under_image clearfix">
-                        <span class="name">
+                        <div class="name">
                             Yellow tshirt
-                        </span>
-                        <span class="cost">
+                        </div>
+                        <div class="cost">
                             $21
-                        </span>
+                        </div>
                     </div>
                 </li>
 
@@ -151,23 +145,22 @@
                         </div>
                     </div>
                     <div class="under_image clearfix">
-                        <span class="name">
+                        <div class="goods">
+                        <div class="name">
                             Cool lingerie
-                        </span>
-                        <span class="cost">
+                        </div>
+                        <div class="cost">
                             $56
-                        </span>
+                        </div>
+                    </div>
                     </div>
                 </li>
             </ul>
-        </div>
-    </article>
 
-    <footer>
-        <div class="wrapper_footer">
-
+        </article>
+    </div>
+    <footer class="footer">
             <div class="contacts">All Rights Reserved © Dokan | Designed <a href="#">ThemenGraph</a></div>
-        </div>
     </footer>
 
 </body>
