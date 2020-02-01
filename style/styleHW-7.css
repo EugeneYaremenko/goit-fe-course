@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "DroidSerif";
+    src:
+        url("../fonts/DroidSerif/DroidSerifItalic/DroidSerifItalic.woff") format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/montserrat/montserrat-v14-latin-regular.woff") format('woff'),
+        url("../fonts/montserrat/montserrat-v14-latin-regular.woff2") format('woff2');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/montserrat/montserrat-v14-latin-regular.woff") format('woff'),
+        url("../fonts/montserrat/montserrat-v14-latin-regular.woff2") format('woff2');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src:
+        url("../fonts/RobotoSlab/roboto-slab-v10-latin-regular.woff") format('woff'),
+        url("../fonts/montserrat/montserrat-v14-latin-regular.woff2") format('woff2');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+.menu_item {
+    position: relative;
+    margin: 20px;
+}
+
+.menu_item a {
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu_item a:hover {
+    color: rgb(254, 209, 54);
+}
+
+.menu_item:last-child {
+    margin-right: 0;
+}
+
+h2 {
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 60px 0 0;
+}
+
+.title {
+    padding: 10px;
+    font-family: "DroidSerif";
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.2;
+    color: rgb(119, 119, 119);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 80px
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 32%;
+    text-align: center;
+    padding: 5px;
+}
+
+.cart_img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgb(254, 209, 54);
+    border-radius: 50%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.cart_img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card a {
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+    padding: 20px;
+}
+
+.card a:hover {
+    text-shadow: 0 0 .70px #333, 0 0 .70px #333;
+}
+
+.card span {
+    font-size: 14px;
+    font-family: "Roboto Slab";
+    color: rgb(119, 119, 119);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.dark {
+    width: 100%;
+    height: auto;
+    background-image: url("../homework-07/img/Map Image.png");
+    background-color: rgb(34, 34, 34);
+    background-repeat: no-repeat;
+    background-position: right;
+    object-fit: cover;
+}
+
+.white {
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 950px;
+    height: 310px;
+}
+
+.imputs {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.imput_item {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 3%;
+    font-size: 14px;
+    font-family: "Montserrat";
+    padding: 10px;
+}
+
+.imputs input::placeholder {
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    padding: 10px;
+}
+
+.imputs input[type='text']:valid,
+.imputs input[type='e-mail']:valid {
+    outline-color: green;
+}
+
+.imputs input[type='text']:invalid,
+.imputs input[type='e-mail']:invalid {
+    outline-color: red;
+}
+
+.description {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(187, 187, 187);
+    line-height: 1.2;
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+    padding: 10px;
+}
+
+textarea::placeholder {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    padding: 5px;
+    width: 240px;
+    height: 65px;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
