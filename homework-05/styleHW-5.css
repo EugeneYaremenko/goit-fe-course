@@ -22,7 +22,7 @@ img {
 }
 
 .wrapper {
-    max-width: 1140px;
+    max-width: 1110px;
     margin: 0 auto;
     position: relative;
     
@@ -82,12 +82,17 @@ a {
     width: 100%;
     height: 600px;
     z-index: 1;
-    background-image: url("../homework-05/img/slide_1.jpg");
+    background-color: rgb(0,0,0);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;  
 }
 
-.slider_item {
+.slider img {
+    opacity: 0.5; 
+}
+
+.slider_content {
     position: absolute;
     right: 50%;
     top: 50%;
@@ -123,30 +128,16 @@ a {
 
 }
 
-.slider_button {
-    position: absolute;
-    width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.651;
-    z-index: 3;
-    border: none;
-    outline: none;
-}
-
 .slider_next {
     position: absolute;
-    right: 0;
+    right: 19%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .slider_prev {
     position: absolute;
-    left: 0;
+    left: 19%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -258,8 +249,7 @@ a {
 }
 
 .under_image {
-    width: inherit;
-    
+    width: 100%;
     position: absolute;
     bottom: 0;
     background: #323232;
@@ -268,7 +258,10 @@ a {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     transition-duration: 0.3s;
+}
 
+.under_image p {
+    margin: 10px;
 }
 
 .goods {
@@ -277,16 +270,13 @@ a {
 
 .name {
     float: left;
-    padding: 10px;
 }
 
 .cost {
-    padding: 10px;
     width: 20%;
     text-align: center;
     float: right;
     background: #8c8c8c;
-    
     transition-duration: 0.3s;
 }
 
@@ -294,7 +284,7 @@ a {
     position: absolute;
     top: 0;
     width: 255px;
-    height: 283px;
+    height: 280px;
     border: 10px solid #fff;
     background-color: rgba(50, 50, 50, 0.5);
     font-family: "Myriad Pro";
@@ -383,13 +373,15 @@ a {
     width: 100%;
     min-height: 70px;
     background-color: #323232;
+    font-size: 16px;
+    font-family: "OpenSans";
 }
 
 .footer a {
-    color: #fff
+    color: #1abc9c
 }
 
-.wrapper p {
+.footer p {
     text-align: center;
     padding: 30px;
     margin: 0 auto;
@@ -398,6 +390,6 @@ a {
     color: #fff
 }
 
-.wrapper a:hover {
-    color: #1abc9c
-}
+
+
+  
