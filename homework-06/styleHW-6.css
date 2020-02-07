@@ -32,7 +32,6 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
 }
 
 .menu {
@@ -40,6 +39,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
+    margin: 30px 0;
 }
 
 .menu_item {
@@ -78,7 +78,7 @@ ul {
 
 .title {
     margin: 0 auto;
-    padding: 60px 0 10px;
+    margin: 60px 0 10px;
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
     color: rgb(51, 51, 51);
@@ -89,7 +89,7 @@ ul {
 h2 {
     position: relative;
     margin: auto;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     text-align: center;
     text-transform: uppercase;
     font-family: "Montserrat";
@@ -106,7 +106,7 @@ h2::after {
     width: 60px;
     height: 3px;
     left: 50%;
-    bottom: 50%;
+    bottom: -30px;
     transform: translateX(-50%);
     background-color: rgb(243, 129, 129);
     z-index: 2;
@@ -114,7 +114,7 @@ h2::after {
 
 .service {
     width: 100%;
-    min-height: 250px;
+    margin-bottom: 90px;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
@@ -123,7 +123,11 @@ h2::after {
 
 .service_item {
     display: flex;
-    max-width: 400px;
+    max-width: 383px;
+}
+
+.service_item:nth-child(-n+3) {
+    margin-bottom: 80px;
 }
 
 .service_image {
@@ -180,7 +184,8 @@ h2::after {
 .team {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 85px;
+    flex-wrap: wrap;
+    margin-bottom: 85px;
 }
 
 .team_cards {
@@ -282,13 +287,17 @@ h2::after {
     align-content: center;
     min-height: 60px;
     max-width: 1200px;
-    padding: 25px 0;
+    margin: 25px 0;
     border-top: 1px solid rgb(229, 229, 229);
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(51, 51, 51);
     line-height: 1.2;
     text-align: center;
+}
+
+.element::before {
+    content: "\00A9";
 }
 
 .contact {
