@@ -42,7 +42,6 @@
     font-style: normal;
 }
 
-
 img {
     display: block;
     max-width: 100%;
@@ -58,28 +57,34 @@ ul {
     max-width: 940px;
     margin: 0 auto;
     position: relative;
-    padding-bottom: 80px;
 }
 
 .header {
     width: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
+    margin: 20px;
 }
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-
 }
 
 .menu_item {
     position: relative;
-    margin: 20px;
+    margin-right: 35px;
+}
+
+.menu_item:last-child {
+    margin-right: 0;
 }
 
 .menu_item a {
@@ -98,13 +103,13 @@ ul {
     margin-right: 0;
 }
 
-h2 {
+.h2 {
     font-family: "Montserrat";
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    padding: 60px 0 0;
+    margin: 100px 0 0;
 }
 
 .title {
@@ -121,7 +126,8 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 80px
+    margin-top: 40px;
+    margin-bottom: 100px;
 }
 
 .card {
@@ -161,7 +167,7 @@ h2 {
     text-shadow: 0 0 .70px #333, 0 0 .70px #333;
 }
 
-.card span {
+.description {
     font-size: 14px;
     font-family: "Roboto Slab";
     color: rgb(119, 119, 119);
@@ -170,9 +176,11 @@ h2 {
 }
 
 .dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
-    height: auto;
-    background-image: url("../homework-07/img/Map Image.png");
+    background-image: url("../img/Map Image.png");
     background-color: rgb(34, 34, 34);
     background-repeat: no-repeat;
     background-position: right;
@@ -184,29 +192,30 @@ h2 {
 }
 
 .form {
+    position: relative;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px;
-    max-width: 950px;
-    height: 310px;
+    margin-top: 65px;
+    margin-bottom: 100px;
 }
 
 .imputs {
-    width: 800px;
+    width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 25px;
 }
 
 .imput_item {
-    width: 100%;
-    height: 50px;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border: 0;
-    border-radius: 3%;
+    border-radius: 2px;
     font-size: 14px;
     font-family: "Montserrat";
-    padding: 10px;
 }
 
 .imputs input::placeholder {
@@ -228,13 +237,15 @@ h2 {
     outline-color: red;
 }
 
-.description {
-    width: 100%;
+.message {
+    width: 48%;
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(187, 187, 187);
     line-height: 1.2;
     text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 textarea {
@@ -249,7 +260,6 @@ textarea::placeholder {
 
 .button {
     display: block;
-    margin: auto;
     padding: 5px;
     width: 240px;
     height: 65px;
@@ -264,4 +274,5 @@ textarea::placeholder {
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
+    margin: 25px auto;
 }

@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styleHW-7.css" rel="stylesheet">
+    <link href="./style/styleHW-7.css" rel="stylesheet">
     <title>Home Work №7</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
+    <header>
+        <div class="wrapper">
             <div class="header">
                 <div class="logo"><a href="#"><img src="./img/Logo-Treehouse.png" alt="Logo"></a></div>
                 <nav>
@@ -24,45 +24,45 @@
                     </ul>
                 </nav>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <section>
-            <h2>Services</h2>
-            <div class="title">Proin iaculis purus consequat sem cure.</div>
+    <section>
+        <div class="wrapper">
+            <h2 class="h2">Services</h2>
+            <p class="title">Proin iaculis purus consequat sem cure.</p>
             <div class="cards">
                 <div class="card">
                     <div class="cart_img"><img src="./img/Icon-Basket.png" alt="Basket"></div>
                     <a href="#">E-Commerce</a>
-                    <span>Proin iaculis purus consequat sem cure
+                    <p class="description">Proin iaculis purus consequat sem cure
                         digni ssim. Donec porttitora entum suscipit
-                        aenean rhoncus posuere odio in tincidunt.</span>
+                        aenean rhoncus posuere odio in tincidunt.</p>
                 </div>
 
                 <div class="card">
                     <div class="cart_img"><img src="./img/Icon-Laptop.png" alt="Laptop"></div>
                     <a href="#">Responsive Web</a>
-                    <span>Proin iaculis purus consequat sem cure
+                    <p class="description">Proin iaculis purus consequat sem cure
                         digni ssim. Donec porttitora entum suscipit
-                        aenean rhoncus posuere odio in tincidunt.</span>
+                        aenean rhoncus posuere odio in tincidunt.</p>
                 </div>
 
                 <div class="card">
                     <div class="cart_img"><img src="./img/Icon-Locked.png" alt="Locked"></div>
                     <a href="#">Web Security</a>
-                    <span>Proin iaculis purus consequat sem cure
+                    <p class="description">Proin iaculis purus consequat sem cure
                         digni ssim. Donec porttitora entum suscipit
-                        aenean rhoncus posuere odio in tincidunt.</span>
+                        aenean rhoncus posuere odio in tincidunt.</p>
                 </div>
             </div>
-        </section>
-
-    </div>
-    <div class="dark">
-        <div class="wrapper">
-
-            <section>
-                <h2 class="white">Contact us</h2>
-                <div class="title">Proin iaculis purus consequat sem cure.</div>
+        </div>
+    </section>
+    <section class="dark">
+        <footer>
+            <div class="wrapper">
+                <h2 class="h2 white">Contact us</h2>
+                <p class="title">Proin iaculis purus consequat sem cure.</p>
 
                 <form class="form" action="#">
                     <div class="imputs">
@@ -71,15 +71,14 @@
                         <input class="imput_item" type="text" name="subject" placeholder="subject">
                     </div>
 
-                    <textarea class="description" name="description" placeholder="Your message*" id="" cols="30"
-                        rows="10" required></textarea>
+                    <textarea class="message" name="description" placeholder="Your message*" id="" cols="30" rows="10"
+                        required></textarea>
+
+                    <button class="button" type="submit">Send Message</button>
                 </form>
-
-                <button class="button" type="submit">Send Message</button>
-            </section>
-        </div>
-    </div>
-
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
