@@ -66,7 +66,7 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .menu {
@@ -113,7 +113,7 @@ ul {
 }
 
 .title {
-    padding: 10px;
+    margin: 10px;
     font-family: "DroidSerif";
     font-size: 16px;
     font-style: italic;
