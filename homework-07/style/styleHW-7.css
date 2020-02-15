@@ -145,7 +145,6 @@ ul {
     border: 5px solid rgb(254, 209, 54);
     border-radius: 50%;
     margin: auto;
-    padding-bottom: 30px;
 }
 
 .cart_img img {
@@ -160,7 +159,7 @@ ul {
     text-decoration: none;
     color: rgb(34, 34, 34);
     font-size: 18px;
-    padding: 20px;
+    margin: 20px;
 }
 
 .card a:hover {
@@ -209,9 +208,7 @@ ul {
 }
 
 .imput_item {
-    height: 45px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 10px;
     border: 0;
     border-radius: 2px;
     font-size: 14px;
@@ -224,7 +221,6 @@ ul {
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
-    padding: 10px;
 }
 
 .imputs input[type='text']:valid,
@@ -244,18 +240,24 @@ ul {
     color: rgb(187, 187, 187);
     line-height: 1.2;
     text-align: left;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 10px;
 }
 
 textarea {
     resize: none;
-    padding: 10px;
 }
 
 textarea::placeholder {
     font-weight: bold;
     text-transform: uppercase;
+}
+
+textarea:valid {
+    outline-color: green;
+}
+
+textarea:invalid {
+    outline-color: red;
 }
 
 .button {
