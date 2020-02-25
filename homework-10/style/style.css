@@ -20,7 +20,30 @@ img {
 }
 
 .menu__item--svg {
-    fill: black;
+    fill:rgb(255, 255, 255);
+}
+
+.menu__item--svg:hover {
+    fill:rgb(252, 227, 138);
+}
+
+.service__svg {
+    margin: 0 auto;
+    width: 83px;
+    fill:rgb(149, 225, 211);
+}
+
+
+.item__svg {
+    fill: rgb(243, 129, 129);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item__svg:hover {
+    fill: #fff;
 }
 
 .link {
@@ -312,6 +335,7 @@ h2::after {
 }
 
 .social__icons-item {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -326,7 +350,7 @@ h2::after {
 }
 
 .social__icons-item:hover {
-    background-color: rgb(149, 225, 211);
+    background-color: rgb(243, 129, 129);
     cursor: pointer;
 }
 
