@@ -42,7 +42,7 @@ img {
     transform: translate(-50%, -50%);
 }
 
-.item__svg:hover {
+.social__icons-item:hover .item__svg {
     fill: #fff;
 }
 
