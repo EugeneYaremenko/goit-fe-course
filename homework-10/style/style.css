@@ -2,7 +2,7 @@
 
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-@import url("./normalize.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
 * {
     margin: 0;
@@ -70,7 +70,6 @@ img {
     flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
 }
 
 .upper {
@@ -92,40 +91,43 @@ header {
 
 .header {
     width: 100%;
+    align-items: center;
 }
 
-.header__menu {
+.menu {
     margin: 35px auto;
+    font-size: 14px;
+    font-family: "Myriad Pro";
 }
 
 .menu__item {
     position: relative;
     margin-right: 30px;
-    font-size: 14px;
-    font-family: "Myriad Pro";
 }
 
 .menu__item:last-child {
     margin-right: 0;
 }
 
-.menu__item--yelow:hover {
+.menu__item--yellow:hover {
     color: rgb(252, 227, 138);
 }
 
-.header__menu .menu__item--yelow::after {
+.menu__item--yellow::after {
     content: "";
     display: block;
     position: absolute;
     bottom: -50%;
-    width: 100%;
+    left: 50%;
+    width: 0;
     height: 3px;
     background-color: rgb(252, 227, 138);
-    opacity: 0;
+    transition: width .5s, left .5s;
 }
 
-.header__menu .menu__item--yelow:hover::after {
-    opacity: 1;
+.menu__item--yellow:hover::after {
+    width: 100%;
+    left:0;
 }
 
 .header__banner {
@@ -193,6 +195,7 @@ h2::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: baseline;
     max-width: 383px;
 }
 
@@ -218,6 +221,10 @@ h2::after {
     font-family: "Montserrat";
     line-height: 1.2;
     text-align: left;
+}
+
+.service__name-yellow:hover {
+    color: rgb(252, 227, 138);
 }
 
 .describe {
@@ -296,6 +303,9 @@ h2::after {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s all ease;
     background-image: -o-linear-gradient(rgba(238, 138, 138, 0.7), rgba(241, 216, 135, 0.7));
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 138, 138, 0.7)), to(rgba(241, 216, 135, 0.7)));
     background-image: linear-gradient(rgba(238, 138, 138, 0.7), rgba(241, 216, 135, 0.7));
@@ -307,9 +317,6 @@ h2::after {
     -webkit-transform: translate(-200px, -10px);
     -ms-transform: translate(-200px, -10px);
     transform: translate(-200px, -10px);
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
     z-index: 2;
 }
 
