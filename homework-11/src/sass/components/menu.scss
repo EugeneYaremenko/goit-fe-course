@@ -1,0 +1,43 @@
+.menu {
+  margin: 35px auto;
+  font-size: 14px;
+  font-family: "Myriad Pro";
+}
+
+.menu__item {
+  position: relative;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__item--yellow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: $main-link-color;
+  transition: width .5s, left .5s;
+}
+
+.menu__item--yellow:hover {
+  color: $main-link-color;
+
+  &::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.menu__item--svg {
+  fill: $link-color;
+
+  &:hover {
+    fill: $main-link-color;
+  }
+}
