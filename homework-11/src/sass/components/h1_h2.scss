@@ -1,0 +1,51 @@
+%h {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+
+h1 {
+  @extend %h;
+  margin: 80px;
+  font-size: 150px;
+  color: $link-color;
+  line-height: 0.933;
+
+  @media (min-width: 768px) and (max-width: 1139px) {
+    font-size: 100px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 70px;
+  }
+
+  @media (max-width: 534px) {
+    font-size: 45px;
+  }
+}
+
+h2 {
+  @extend %h;
+  position: relative;
+  margin: auto;
+  margin-bottom: 100px;
+  font-size: 30px;
+  line-height: 1.2;
+  color: $third-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    left: 50%;
+    bottom: -30px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: $secondary-link-color;
+    z-index: 2;
+  }
+}

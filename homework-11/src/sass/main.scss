@@ -1,0 +1,22 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'healpers/variables.scss';
+@import 'normalize.scss';
+@import 'base.scss';
+
+/*components*/
+@import 'components/link.scss';
+@import 'components/wrapper.scss';
+@import 'components/just.scss';
+@import 'components/menu.scss';
+@import 'components/header.scss';
+@import 'components/title.scss';
+@import 'components/h1_h2.scss';
+@import 'components/service.scss';
+@import 'components/describe.scss';
+@import 'components/team.scss';
+@import 'components/footer.scss';
+@import 'components/mail.scss';
+@import 'components/button.scss';
+@import 'components/social_icons.scss';

@@ -1,0 +1,30 @@
+.social__icons {
+  width: 220px;
+  height: 55px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+.social__icons-item {
+  position: relative;
+  display: flex;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 1px;
+  background-color: $main-link-color;
+
+  &:hover {
+    background-color: $secondary-link-color;
+    cursor: pointer;
+  }
+}
+
+.social__icons-item:hover .item__svg {
+  fill: $link-color;
+}
