@@ -1,7 +1,7 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-@import 'healpers/variables.scss';
+@import 'helpers/variables.scss';
 @import 'normalize.scss';
 @import 'base.scss';
 
@@ -12,11 +12,11 @@
 @import 'components/menu.scss';
 @import 'components/header.scss';
 @import 'components/title.scss';
-@import 'components/h1_h2.scss';
+@import 'components/typographic.scss';
 @import 'components/service.scss';
 @import 'components/describe.scss';
 @import 'components/team.scss';
 @import 'components/footer.scss';
 @import 'components/mail.scss';
 @import 'components/button.scss';
-@import 'components/social_icons.scss';
+@import 'components/social-icons.scss';

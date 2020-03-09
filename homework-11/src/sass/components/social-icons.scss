@@ -1,4 +1,4 @@
-.social__icons {
+.social-icons {
   width: 220px;
   height: 55px;
   position: absolute;
@@ -10,7 +10,7 @@
   opacity: 0;
 }
 
-.social__icons-item {
+.social-icons__item {
   position: relative;
   display: flex;
   position: relative;
@@ -25,6 +25,6 @@
   }
 }
 
-.social__icons-item:hover .item__svg {
+.social-icons__item:hover .item__svg {
   fill: $link-color;
 }

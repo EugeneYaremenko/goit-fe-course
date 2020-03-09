@@ -8,10 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  font-family: $main-font-stack;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -30,12 +26,6 @@ img {
 
 .center {
   text-align: center;
-}
-
-.button {
-  display: block;
-  cursor: pointer;
-  text-transform: uppercase;
 }
 
 .line {

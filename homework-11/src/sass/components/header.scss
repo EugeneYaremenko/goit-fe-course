@@ -1,4 +1,3 @@
-
 header {
   background-image: linear-gradient($main-gradient-color, $secondary-gradient-color), url("../images/picture.jpg");
   background-size: cover;
@@ -13,17 +12,21 @@ header {
   &__banner {
     margin-top: 150px;
     font-size: 72px;
-    font-family: "Kaushan Script";
+    font-family: $fourth-font;
     color: $link-color;
     line-height: 1.2;
   }
+}
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
+  .header {
     flex-direction: column-reverse;
   }
+}
 
-  @media (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: linear-gradient($main-gradient-color, $secondary-gradient-color), url("../images/picture@2x.jpg")
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .header {
+    background-image: linear-gradient($main-gradient-color, $secondary-gradient-color), url("../images/picture@2x.jpg");
   }
 }

@@ -2,16 +2,11 @@
   max-width: 1200px;
   margin: 10px 0;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: $main-font;
   color: $third-color;
   line-height: 1.2;
   text-align: center;
   align-items: center;
-
-  @media (max-width: 580px) {
-    flex-direction: column;
-    align-content: center;
-  }
 }
 
 .footer__contact--element::before {
@@ -20,11 +15,18 @@
 
 .footer__contact {
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: $main-font;
   color: $third-color;
   line-height: 1.2;
 }
 
 .footer__contact a {
   color: $secondary-link-color;
+}
+
+@media (max-width: 580px) {
+  .footer {
+    flex-direction: column;
+    align-content: center;
+  }
 }
