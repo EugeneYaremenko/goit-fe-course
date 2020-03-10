@@ -64,24 +64,3 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-@media (min-width: 768px) and (max-width: 1139px) {
-  .team {
-    justify-content: space-around;
-  }
-
-  .team__cards:not(:nth-last-child(-n+1)) {
-    margin-bottom: 80px;
-  }
-}
-
-@media (max-width: 767px) {
-  .team {
-    flex-direction: column;
-    align-content: center;
-  }
-
-  .team__cards:not(:nth-last-child(-n+1)) {
-    margin-bottom: 80px;
-  }
-}

@@ -23,10 +23,3 @@
 .footer__contact a {
   color: $secondary-link-color;
 }
-
-@media (max-width: 580px) {
-  .footer {
-    flex-direction: column;
-    align-content: center;
-  }
-}

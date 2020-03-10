@@ -37,21 +37,3 @@ h2 {
     z-index: 2;
   }
 }
-
-@media (min-width: 768px) and (max-width: 1139px) {
-  h1 {
-    font-size: 100px;
-  }
-}
-
-@media (max-width: 767px) {
-  h1 {
-    font-size: 70px;
-  }
-}
-
-@media (max-width: 534px) {
-  h1 {
-    font-size: 45px;
-  }
-}
